@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "310073128388",
+    "project_id": "p-th-app-movil",
+    "storage_bucket": "p-th-app-movil.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:310073128388:android:f5b66dc599699d76f6a091",
+        "android_client_info": {
+          "package_name": "com.ortiz.p_th_app_movil"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "310073128388-588kefea8k9ukcd148pbcuj9agkt38ir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxP_C54MyXKaThdhRP4xxAVFsnS2cwkqs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "310073128388-588kefea8k9ukcd148pbcuj9agkt38ir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
