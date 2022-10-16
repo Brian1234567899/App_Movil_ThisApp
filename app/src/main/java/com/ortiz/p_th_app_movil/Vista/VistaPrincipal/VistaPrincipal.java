@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.ortiz.p_th_app_movil.R;
+import com.ortiz.p_th_app_movil.Vista.VistaCatalogo.Catalogo;
 import com.ortiz.p_th_app_movil.Vista.VistaLogin.VistaLogin;
 import com.ortiz.p_th_app_movil.Vista.VistaRegistro.RegistroCitas;
 import com.ortiz.p_th_app_movil.Vista.VistaRegistro.Rgt_User;
@@ -18,6 +19,7 @@ public class VistaPrincipal extends AppCompatActivity {
 
     Button btn_registro;
     Button btn_citas;
+    Button btn_catalogo;
 
 
     @Override
@@ -27,6 +29,7 @@ public class VistaPrincipal extends AppCompatActivity {
 
         btn_registro=findViewById(R.id.btn_registro);
         btn_citas=findViewById(R.id.btn_citas);
+        btn_catalogo=findViewById(R.id.btn_catalogo);
 
 
         btn_registro.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +43,13 @@ public class VistaPrincipal extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent_explicito = new Intent(VistaPrincipal.this, VistaRegistro.class);
+                startActivity(intent_explicito);
+            }
+        });
+        btn_catalogo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_explicito = new Intent(VistaPrincipal.this, Catalogo.class);
                 startActivity(intent_explicito);
             }
         });

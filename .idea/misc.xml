@@ -5,12 +5,13 @@
       <map>
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/drawable/ic_key.xml" value="0.1655" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/drawable/ic_user.xml" value="0.1695" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_catalogo.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_registro_citas.xml" value="0.33" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_registro_citas.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_registro_usuario.xml" value="0.2" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_rgt_user.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_usuario_registro.xml" value="0.19010416666666666" />
-        <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_vista_principal.xml" value="0.25" />
+        <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_vista_principal.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_vista_registro.xml" value="0.22" />
         <entry key="..\:/Users/Usuario/AndroidStudioProjects/P_TH_App_Movil/app/src/main/res/layout/activity_vista_registro_citas.xml" value="0.19293478260869565" />
       </map>

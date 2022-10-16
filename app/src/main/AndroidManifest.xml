@@ -16,7 +16,7 @@
         android:theme="@style/Theme.P_TH_App_Movil"
         tools:targetApi="31">
         <activity
-            android:name=".Catalogo"
+            android:name=".Vista.VistaCatalogo.Catalogo"
             android:exported="false" />
         <activity
             android:name=".Vista.VistaRegistro.Rgt_User"

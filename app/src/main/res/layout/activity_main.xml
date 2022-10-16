@@ -44,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:textColor="@color/black"
             android:inputType="textPersonName"
             android:hint="Correo Electronico"
 
@@ -58,6 +59,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
+            android:textColor="@color/black"
             android:hint="Contraseña"
             android:drawableLeft="@drawable/ic_key"
             android:drawablePadding="10dp"
