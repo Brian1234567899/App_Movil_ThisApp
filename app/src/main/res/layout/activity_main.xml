@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:layout_margin="20dp"
+    android:background="@drawable/fondo1"
     tools:context=".Vista.VistaLogin.VistaLogin">
 
     <TextView
@@ -25,6 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="20dp"
+        android:background="@drawable/fondo2"
         android:orientation="vertical">
 
 
@@ -46,7 +47,7 @@
             android:inputType="textPersonName"
             android:hint="Correo Electronico"
 
-            android:drawableLeft="@drawable/ic_user"
+            android:drawableLeft="@drawable/ic_email"
 
             android:drawablePadding="10dp"
             android:layout_margin="10dp"/>
@@ -68,15 +69,18 @@
             android:layout_height="wrap_content"
             android:text="INGRESAR"
             android:layout_margin="10dp" />
-        <Button
-            android:id="@+id/btn_registro"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="REGISTRARSE"
-            android:layout_margin="10dp" />
 
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/tvt_registrar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="REGISTRARSE"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
        </LinearLayout>
 
 

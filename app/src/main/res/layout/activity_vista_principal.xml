@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
-    android:background="@drawable/fondo"
+    android:background="@drawable/fondo1"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Vista.VistaPrincipal.VistaPrincipal">
@@ -28,7 +27,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:gravity="center"
         android:textSize="20dp"
         android:text="MENU PRINCIPAL" />
@@ -36,7 +35,7 @@
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:gravity="center"
         android:textSize="20dp"
         android:text="BIENBENIDO:_____"

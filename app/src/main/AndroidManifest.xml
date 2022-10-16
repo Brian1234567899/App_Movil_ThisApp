@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.ortiz.p_th_app_movil">
-<uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.P_TH_App_Movil"
         tools:targetApi="31">
+        <activity
+            android:name=".Catalogo"
+            android:exported="false" />
+        <activity
+            android:name=".Vista.VistaRegistro.Rgt_User"
+            android:exported="false" />
         <activity
             android:name=".Vista.VistaRegistro.RegistroCitas"
             android:exported="false" />

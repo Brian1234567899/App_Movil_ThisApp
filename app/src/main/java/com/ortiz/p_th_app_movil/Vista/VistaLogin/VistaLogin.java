@@ -12,12 +12,14 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ortiz.p_th_app_movil.Presentador.PresentadorLogin.PresentadorLogin;
 import com.ortiz.p_th_app_movil.R;
+import com.ortiz.p_th_app_movil.Vista.VistaRegistro.Rgt_User;
 
 public class VistaLogin extends AppCompatActivity implements View.OnClickListener {
 
@@ -25,6 +27,7 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
     private Button btn_ingresar, btn_registro;
     private PresentadorLogin presentadorLogin;
     ImageView image_logo;
+    TextView tvt_registrar;
 
 
 
@@ -47,6 +50,7 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
         btn_ingresar = findViewById(R.id.btn_ingresar);
         btn_ingresar.setOnClickListener(this);
         image_logo=findViewById(R.id.img_logo);
+        tvt_registrar=findViewById(R.id.tvt_registrar);
 
 
 
@@ -54,6 +58,19 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
         image_logo.startAnimation(mianimacion);
 
 
+
+
+
+        //salto al registro de usuario
+        tvt_registrar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent Intent = new Intent(VistaLogin.this, Rgt_User.class);
+                startActivity(Intent);
+
+            }
+        });
     }
 
     @Override
