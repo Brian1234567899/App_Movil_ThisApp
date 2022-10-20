@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/fondo5"
+    android:background="@drawable/fondo9"
     android:layout_height="match_parent"
     tools:context=".Vista.VistaCatalogo.Catalogo">
 
@@ -58,7 +58,7 @@
                 <LinearLayout
                     android:layout_width="312dp"
                     android:layout_height="124dp"
-                    android:background="@drawable/fondo4"
+                    android:background="@drawable/fondo9"
                     android:orientation="vertical">
 
                     <TextView
@@ -73,7 +73,7 @@
                     <LinearLayout
                         android:layout_width="308dp"
                         android:layout_height="88dp"
-                        android:background="@drawable/fondo6"
+                        android:background="@drawable/fondo1"
                         android:gravity="center"
                         android:orientation="horizontal">
 
@@ -116,7 +116,7 @@
                 <LinearLayout
                     android:layout_width="312dp"
                     android:layout_height="124dp"
-                    android:background="@drawable/fondo4"
+                    android:background="@drawable/fondo1"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -133,7 +133,7 @@
                         android:layout_width="312dp"
                         android:layout_height="88dp"
                         android:gravity="center"
-                        android:background="@drawable/fondo6"
+                        android:background="@drawable/fondo1"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -173,7 +173,7 @@
                 <LinearLayout
                     android:layout_width="312dp"
                     android:layout_height="124dp"
-                    android:background="@drawable/fondo4"
+                    android:background="@drawable/fondo1"
                     android:orientation="vertical">
 
                     <TextView
@@ -189,7 +189,7 @@
                         android:layout_width="311dp"
                         android:layout_height="88dp"
                         android:gravity="center"
-                        android:background="@drawable/fondo6"
+                        android:background="@drawable/fondo1"
                         android:orientation="horizontal">
 
                         <ImageView

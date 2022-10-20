@@ -8,27 +8,26 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@drawable/fondo1"
+    android:background="@drawable/fondo2"
     tools:context=".Vista.VistaLogin.VistaLogin">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="INICIO DE SESION"
         android:textColor="@color/black"
         android:textSize="40dp"
-        android:textStyle="italic"
-        android:text="INICIO DE SESION" />
+        android:textStyle="bold" />
 
 
-
-        <LinearLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="460dp"
         android:layout_margin="20dp"
-        android:background="@drawable/fondo2"
-        android:orientation="vertical">
-
-
+        android:background="@drawable/bordes"
+        android:orientation="vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
 
 
         <ImageView
@@ -43,46 +42,50 @@
             android:id="@+id/txt_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_email"
+            android:drawablePadding="10dp"
             android:ems="10"
-            android:textColor="@color/black"
-            android:inputType="textPersonName"
+
             android:hint="Correo Electronico"
 
-            android:drawableLeft="@drawable/ic_email"
-
-            android:drawablePadding="10dp"
-            android:layout_margin="10dp"/>
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
             android:id="@+id/txt_clave"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:textColor="@color/black"
-            android:hint="Contraseña"
+            android:layout_margin="10dp"
             android:drawableLeft="@drawable/ic_key"
             android:drawablePadding="10dp"
-            android:layout_margin="10dp"/>
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
 
         <Button
             android:id="@+id/btn_ingresar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="INGRESAR"
-            android:layout_margin="10dp" />
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:text="INGRESAR" />
 
 
-            <TextView
-                android:id="@+id/tvt_registrar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="REGISTRARSE"
-                android:textColor="@color/black"
-                android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tvt_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:text="REGISTRARSE"
+            android:textColor="@color/black" />
 
 
-        </LinearLayout>
+    </LinearLayout>
        </LinearLayout>
 
 
