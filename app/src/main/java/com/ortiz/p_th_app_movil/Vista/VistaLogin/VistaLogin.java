@@ -1,7 +1,7 @@
 package com.ortiz.p_th_app_movil.Vista.VistaLogin;
 
+//Importacion de librerias, clases y paquetes
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -13,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
-
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -23,13 +22,11 @@ import com.ortiz.p_th_app_movil.Vista.VistaRegistro.Rgt_User;
 
 public class VistaLogin extends AppCompatActivity implements View.OnClickListener {
 
+    //Declaracion de las variables
     private EditText txt_email, txt_clave;
-    private Button btn_ingresar, btn_registro;
     private PresentadorLogin presentadorLogin;
     ImageView image_logo;
     TextView tvt_registrar;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,28 +34,24 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
         setContentView(R.layout.activity_main);
 
 
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-
+        //Instaciando la base de datos RealTime DataBase de Firebase
         FirebaseAuth mAuth = FirebaseAuth.getInstance();
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference();
+        presentadorLogin = new PresentadorLogin(this,mAuth,mDatabase);
 
-        presentadorLogin = new PresentadorLogin(this, mAuth, mDatabase);
 
+        //Texteo de las variables
         txt_email = findViewById(R.id.txt_email);
         txt_clave = findViewById(R.id.txt_clave);
-        btn_ingresar = findViewById(R.id.btn_ingresar);
-        btn_ingresar.setOnClickListener(this);
         image_logo=findViewById(R.id.img_logo);
         tvt_registrar=findViewById(R.id.tvt_registrar);
+        Button btnlogin =findViewById(R.id.btn_ingresar);
+        btnlogin.setOnClickListener(this);
 
 
-
+         //Animacion del logo que se mostrara en el login
         Animation mianimacion= AnimationUtils.loadAnimation(this,R.anim.blink);
         image_logo.startAnimation(mianimacion);
-
-
-
 
 
         //salto al registro de usuario
@@ -73,13 +66,14 @@ public class VistaLogin extends AppCompatActivity implements View.OnClickListene
         });
     }
 
+    //Validacion del usuario y la clave
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_ingresar:
                 String email = txt_email.getText().toString().trim();
-                String clave = txt_clave.getText().toString().trim();
-                presentadorLogin.Login(email, clave);
+                String password =txt_clave.getText().toString().trim();
+                presentadorLogin.Ingresar(email,password);
                 break;
         }
 

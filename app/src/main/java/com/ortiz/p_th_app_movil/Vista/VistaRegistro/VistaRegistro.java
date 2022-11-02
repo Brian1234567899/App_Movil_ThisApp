@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.ortiz.p_th_app_movil.R;
 import com.ortiz.p_th_app_movil.Vista.VistaLogin.VistaLogin;
 import com.ortiz.p_th_app_movil.Vista.VistaPrincipal.VistaPrincipal;
 
 public class VistaRegistro extends AppCompatActivity {
-    TextView tvt_volver;
+    FloatingActionButton tvt_volver;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -22,7 +22,7 @@
 
     <LinearLayout
         android:layout_width="330dp"
-        android:layout_height="492dp"
+        android:layout_height="581dp"
         android:layout_margin="20dp"
         android:background="#BCEEFF"
         android:orientation="vertical">
@@ -48,7 +48,18 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/txt_user"
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_usuario"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="Nombre completo"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/txt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -57,6 +68,7 @@
             android:ems="10"
             android:hint="Registre un Nombre de Usuario"
             android:inputType="textPersonName" />
+
 
         <EditText
             android:id="@+id/txt_clave"
@@ -70,30 +82,24 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/btn_registro"
+            android:id="@+id/btn_registro_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="Registrar Usuario" />
 
-        <TextView
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+
             android:id="@+id/tvt_volver"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:drawableLeft="@drawable/ic_volver"
-            android:paddingLeft="15dp"
-            android:textColor="@color/black" />
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_volver" />
 
 
     </LinearLayout>
 
-    <ImageView
-        android:id="@+id/img_imagen"
-        android:layout_width="346dp"
-        android:layout_height="135dp"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        app:srcCompat="@drawable/estetica" />
+
 
 </LinearLayout>

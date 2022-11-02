@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondo2"
+    android:background="@drawable/fondo1"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".Vista.VistaPrincipal.VistaPrincipal">
@@ -29,31 +29,19 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="20dp"
+        android:textSize="45dp"
         android:text="MENU PRINCIPAL" />
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:textSize="20dp"
-        android:text="BIENVENIDO:_____"
-        android:layout_margin="8dp"/>
+
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        >
+        android:layout_width="378dp"
+        android:layout_height="369dp"
+        android:gravity="center">
 
         <TableRow
             android:layout_width="222dp"
             android:layout_height="match_parent"
-            android:gravity="center"
-            >
+            android:gravity="center">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -76,6 +64,7 @@
                     <LinearLayout
                         android:layout_width="308dp"
                         android:layout_height="88dp"
+
                         android:gravity="center"
                         android:orientation="horizontal">
 
@@ -122,8 +111,8 @@
                         android:id="@+id/textView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Lista de Citas Pendientes"
                         android:gravity="center"
+                        android:text="Lista de Citas Pendientes"
                         android:textColor="@color/black"
                         android:textSize="18dp" />
 
@@ -173,8 +162,8 @@
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Catalogo de servicios"
                         android:gravity="center"
+                        android:text="Catalogo de servicios"
                         android:textColor="@color/black"
                         android:textSize="18dp" />
 

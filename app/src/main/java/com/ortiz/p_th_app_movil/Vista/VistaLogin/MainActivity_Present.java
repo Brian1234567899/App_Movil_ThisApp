@@ -20,7 +20,7 @@ public class MainActivity_Present extends AppCompatActivity {
                 startActivity(new Intent(MainActivity_Present.this, VistaLogin.class));
                 finish();
             }
-        }, 2000);
+        }, 3000);
 
     }
 }

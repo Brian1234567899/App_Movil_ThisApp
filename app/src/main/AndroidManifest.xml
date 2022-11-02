@@ -32,9 +32,6 @@
             android:name=".Vista.VistaRegistro.Rgt_User"
             android:exported="false" />
         <activity
-            android:name=".Vista.VistaRegistro.RegistroCitas"
-            android:exported="false" />
-        <activity
             android:name=".Vista.VistaRegistro.VistaRegistro"
             android:exported="false" />
         <activity

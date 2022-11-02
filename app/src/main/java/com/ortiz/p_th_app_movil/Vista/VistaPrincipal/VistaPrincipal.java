@@ -6,20 +6,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.ortiz.p_th_app_movil.Presentador.PresentadorVistaPrincipal.VistaPrincipalP;
 import com.ortiz.p_th_app_movil.R;
 import com.ortiz.p_th_app_movil.Vista.VistaCatalogo.Catalogo;
-import com.ortiz.p_th_app_movil.Vista.VistaLogin.VistaLogin;
-import com.ortiz.p_th_app_movil.Vista.VistaRegistro.RegistroCitas;
-import com.ortiz.p_th_app_movil.Vista.VistaRegistro.Rgt_User;
 import com.ortiz.p_th_app_movil.Vista.VistaRegistro.VistaRegistro;
 
-public class VistaPrincipal extends AppCompatActivity {
+public class VistaPrincipal extends AppCompatActivity implements  View.OnClickListener{
 
-    Button btn_registro;
+
     Button btn_citas;
     Button btn_catalogo;
+    private FirebaseAuth mAuth;
+    private DatabaseReference mDatabase;
+    private VistaPrincipalP vistaPrincipalP;
+
 
 
     @Override
@@ -27,18 +31,18 @@ public class VistaPrincipal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vista_principal);
 
-        btn_registro=findViewById(R.id.btn_registro);
+
         btn_citas=findViewById(R.id.btn_citas);
         btn_catalogo=findViewById(R.id.btn_catalogo);
+        mAuth=FirebaseAuth.getInstance();
+        mDatabase = FirebaseDatabase.getInstance().getReference();
+        vistaPrincipalP = new VistaPrincipalP(this,mAuth,mDatabase);
+        vistaPrincipalP.MensajeBienvenida();
+        Button button = findViewById(R.id.btn_registro);
+        button.setOnClickListener(this);
 
 
-        btn_registro.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent_explicito = new Intent(VistaPrincipal.this, RegistroCitas.class);
-            startActivity(intent_explicito);
-        }
-    });
+
         btn_citas.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -54,7 +58,19 @@ public class VistaPrincipal extends AppCompatActivity {
             }
         });
 
+
+
+
+
+
     }
 
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case  R.id.btn_registro: vistaPrincipalP.cargardedatos();
+                break;
+        }
+    }
 }

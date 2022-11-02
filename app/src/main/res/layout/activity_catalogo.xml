@@ -15,16 +15,14 @@
         android:layout_height="76dp"
         android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tvt_volver"
-            android:layout_width="71dp"
-            android:layout_height="60dp"
-            android:background="@drawable/ic_volver"
-            android:fontFamily="cursive"
-            android:gravity="center"
-            android:textColor="@color/black"
-            android:textSize="5dp" />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
 
+            android:id="@+id/tvt_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_volver"
+            />
         <TextView
             android:id="@+id/textView15"
             android:layout_width="294dp"
@@ -58,7 +56,8 @@
                 <LinearLayout
                     android:layout_width="312dp"
                     android:layout_height="124dp"
-                    android:background="@drawable/fondo9"
+                    android:background="@drawable/bordes2"
+
                     android:orientation="vertical">
 
                     <TextView
@@ -72,7 +71,7 @@
 
                     <LinearLayout
                         android:layout_width="308dp"
-                        android:layout_height="88dp"
+                        android:layout_height="101dp"
                         android:background="@drawable/fondo1"
                         android:gravity="center"
                         android:orientation="horizontal">
@@ -116,7 +115,7 @@
                 <LinearLayout
                     android:layout_width="312dp"
                     android:layout_height="124dp"
-                    android:background="@drawable/fondo1"
+                    android:background="@drawable/bordes2"
                     android:gravity="center"
                     android:orientation="vertical">
 
@@ -173,7 +172,7 @@
                 <LinearLayout
                     android:layout_width="312dp"
                     android:layout_height="124dp"
-                    android:background="@drawable/fondo1"
+                    android:background="@drawable/bordes2"
                     android:orientation="vertical">
 
                     <TextView
